@@ -56,7 +56,6 @@ class App extends Component {
 				</div>
 				<div>
 					{this.state.movies.map((movie, index) => (
-						// this is spread syntax, it allows us to pass in an object literal as our `props` value
 						<MovieView key={index} movie={movie} onAddToWatchlist={this.addToWatchlist} />
 					))}
 				</div>
